@@ -52,7 +52,7 @@ class Form extends Component
         session(['download' => true]);
 
         // Emit an event to the Blade view to initiate the download
-        $this->emit('initiateDownload');
+        $this->emit('initiateDownloadAndRedirect');
 
         // Hide the modal
         $this->hideModal();

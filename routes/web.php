@@ -18,7 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/resume', [MainController::class, 'downloadResume']);
+Route::get('/download-resume', [MainController::class, 'downloadResume']);
+
+Route::get('/thank-you', function () {
+    return view('thank-you');
+});
 
 Route::middleware([
     'auth:sanctum',

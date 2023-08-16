@@ -53,9 +53,14 @@
 
 @push('scripts')
   <script>
-    window.livewire.on('initiateDownload', function() {
-        console.log("Event received");
-        window.location.href = "/resume";
+    window.livewire.on('initiateDownloadAndRedirect', function() {
+        // Start the download
+        window.location.href = "/download-resume"; // This route will handle the actual file download
+
+        // Wait for a short duration and then redirect to the thank-you page
+        setTimeout(function() {
+            window.location.href = "/thank-you";
+        }, 1000); // 1 second delay, adjust as needed
     });
   </script>
 @endpush
