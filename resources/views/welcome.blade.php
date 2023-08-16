@@ -90,13 +90,13 @@
                   Read my previous newsletter issues on how to productize your skill.
                 </p>
                 <button
-                  class="bg-[#272727] hover:bg-[#e7e7e7] px-4 py-2 rounded mt-8 hover:text-[#131313] flex items-center"
+                  class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
                 >
                   <span class="relative flex h-3 w-3 mr-4">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
                   </span>
-                  <span>Under development</span>
+                  <span>Getting first 1,000 subs</span>
                 </button>
               </div>
 
@@ -123,7 +123,7 @@
                   Take a moment to dive into my latest work. I'm eager to share them with you.
                 </p>
                 <button
-                  class="bg-[#272727] hover:bg-[#e7e7e7] px-4 py-2 rounded mt-8 hover:text-[#131313] flex items-center"
+                  class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
                 >
                   <span class="relative flex h-3 w-3 mr-4">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
@@ -140,14 +140,14 @@
                   your skill.
                 </p>
                 <button
-                  class="bg-[#272727] hover:bg-[#e7e7e7] px-4 py-2 rounded mt-8 hover:text-[#131313] flex items-center"
-                >
-                  <span class="relative flex h-3 w-3 mr-4">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
-                  </span>
-                  <span>Under development</span>
-                </button>
+                class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
+              >
+                <span class="relative flex h-3 w-3 mr-4">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
+                </span>
+                <span>Currently filming</span>
+              </button>
               </div>
             </div>
           </main>
