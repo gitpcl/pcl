@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Recruiters;
 
 use Livewire\Component;
 use App\Models\Recruiters;
+use Illuminate\Support\Facades\Storage;
 
 class Form extends Component
 {
@@ -19,8 +20,8 @@ class Form extends Component
         'last_name' => 'required',
         'company' => 'required',
         'company_url' => 'required|url',
-        'phone' => 'regex:/^(\d{3}-\d{3}-\d{4})$/',
-        'cell' => 'required|regex:/^(\d{3}-\d{3}-\d{4})$/',
+        'phone' => 'regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
+        'cell' => 'required|regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
         'email' => 'required|email',
     ];
 
@@ -48,10 +49,13 @@ class Form extends Component
             'email' => $this->email,
         ]);
 
-        // Assuming you have your resume in the public directory named "PedroLopes_Resume.pdf"
-        return redirect()->to('/PedroLopes_Resume.pdf');
+        session(['download' => true]);
 
-        $this->emit('downloaded');
+        // Emit an event to the Blade view to initiate the download
+        $this->emit('initiateDownload');
+
+        // Hide the modal
+        $this->hideModal();
     }
 
     public function render()

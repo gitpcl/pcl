@@ -1,20 +1,14 @@
 <x-guest-layout>
-        {{-- <div>
-            <div
-            class="bg-[#1E1E1E] text-white p-4 flex"
-          >
-            <div id="topHeader" class="mx-auto">
-              Follow me on X ->
-              <a href="https://www.x.com/pedrclopes" class="underline">@pedrclopes</a>
+        <div>
+          <div x-data="{ show: true }" x-show="show">
+            <div class="bg-[#1E1E1E] text-white p-4 flex">
+                <div id="topHeader" class="mx-auto">
+                    Follow me on X -> <a href="https://www.x.com/pedrclopes" class="underline">@pedrclopes</a>
+                </div>
+                <img src="https://uploads-ssl.webflow.com/63c17192dc5a0a695a180ab0/63c17192dc5a0a3fde180b06_icon-cross-circle.svg" loading="lazy" alt="" class="announcement-cross" @click="show = false" />
             </div>
-            <img
-              src="https://uploads-ssl.webflow.com/63c17192dc5a0a695a180ab0/63c17192dc5a0a3fde180b06_icon-cross-circle.svg"
-              loading="lazy"
-              alt=""
-              class="announcement-cross"
-              @click="show = false"
-            />
-          </div> --}}
+        </div>
+        
           <header class="bg-[#131313] border border-b-1 border-[#1E1E1E]">
             <nav
               class="text-white py-4 px-8 flex items-center max-w-7xl mx-auto justify-between"

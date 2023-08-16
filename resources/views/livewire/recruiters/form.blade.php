@@ -15,7 +15,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>                       
                 </div>
-                <p class="text-[#a5a5a5] mb-4">Thank you for your interest. Please fill out the form below in order to download my resume. I really appreciate the opportunity.</p>
+                <p class="text-[#a5a5a5] mb-4">Thank you for your interest. Please fill out the form below in order to download my resume. <b class="text-white">Yes, this is my most recent resume</b>. I really appreciate the opportunity.</p>
                 <div class="flex">
                     <input class="w-1/2 bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 mr-2" type="text" wire:model="first_name" placeholder="First Name" required>
                     @error('first_name') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
@@ -27,17 +27,17 @@
                 <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="text" wire:model="company" placeholder="Company Name" required>
                 @error('company') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
 
-                <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="text" wire:model="company_url" placeholder="https://www.yourcompany.com" required>
+                <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="url" wire:model="company_url" placeholder="https://www.yourcompany.com" required>
                 @error('company_url') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
 
                 <div class="flex">
                     <div class="w-1/2 mr-2">
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="text" wire:model="phone" placeholder="Phone (XXX-XXX-XXXX)" required>
+                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="tel" wire:model="phone" placeholder="Phone (XXX-XXX-XXXX)" required>
                         @error('phone') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
 
                     <div class="w-1/2">
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="text" wire:model="cell" placeholder="Cell (XXX-XXX-XXXX)" required>
+                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2" type="tel" wire:model="cell" placeholder="Cell (XXX-XXX-XXXX)" required>
                         @error('cell') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
                 </div>
@@ -50,3 +50,12 @@
         </div>
     @endif
 </div>
+
+@push('scripts')
+  <script>
+    window.livewire.on('initiateDownload', function() {
+        console.log("Event received");
+        window.location.href = "/resume";
+    });
+  </script>
+@endpush

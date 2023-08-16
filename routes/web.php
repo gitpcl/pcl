@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/thank-you', function () {
-    return view('thank-you');
-});
+Route::get('/resume', [MainController::class, 'downloadResume']);
 
 Route::middleware([
     'auth:sanctum',
