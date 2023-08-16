@@ -15,7 +15,7 @@
             >
               <div class="flex items-center mr-4 font-semibold">
                 <img src="/images/pcl_profile.png" class="w-[40px] mr-4" alt="" />
-                <a href="/index.html"> Pedro Lopes </a>
+                <a href="/"> Pedro Lopes </a>
               </div>
               <div>
                 @if (Route::has('login'))
@@ -58,7 +58,7 @@
                   don't have time to read news
                 </h1>
                 <p
-                  class="px-8 md:w-1/2 mx-auto text-center mt-4 text-xl text-[#A5A5A5]"
+                  class="px-8 md:w-1/2 mx-auto text-center mt-4 md:text-xl text-[#A5A5A5]"
                 >
                   Stay ahead of the curve! Dive into rapid-fire tech updates, trends, and breakthroughs, curated for those who crave knowledge but race against time. Never miss a beat in the thrilling world of technology.
                 </p>
@@ -157,7 +157,7 @@
             <div class="max-w-7xl mx-auto flex justify-between">
               <p>© 2023 Pedro Lopes. All rights reserved.</p>
               <div class="flex">
-                <a href="" class="ml-2">
+                <a href="https://github.com/gitpcl" class="ml-2">
                   <svg
                     width="24"
                     height="24"
@@ -179,7 +179,7 @@
                     />
                   </svg>
                 </a>
-                <a href="" class="ml-2">
+                <a href="https://www.linkedin.com/in/pedro-c-lopes/" class="ml-2">
                  <svg
                     width="24"
                     height="24"
@@ -214,7 +214,7 @@
                     />
                   </svg>
                 </a>
-                <a href="" class="ml-2">
+                <a href="https://www.x.com/pedrclopes" class="ml-2">
                   <svg
                     width="24"
                     height="24"
@@ -231,7 +231,7 @@
                     />
                   </svg>
                 </a>
-                <a href="" class="ml-2">
+                {{-- <a href="" class="ml-2">
                  <svg
                     width="24"
                     height="24"
@@ -254,8 +254,8 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                </a>
-                <a href="#" class="ml-2">
+                </a> --}}
+                <a href="https://www.instagram.com/pedrclopes" class="ml-2">
                   <svg
                     width="24"
                     height="24"
