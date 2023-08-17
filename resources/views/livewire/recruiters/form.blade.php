@@ -5,7 +5,7 @@
             <div class="absolute inset-0 bg-black opacity-80"></div>
             
             <!-- Modal content -->
-            <div class="bg-[#1e1e1e] p-12 rounded shadow-xl flex flex-col w-[600px] z-20 m-8">
+            <div class="bg-[#1e1e1e] p-12 rounded shadow-xl flex flex-col w-[600px] z-20 md:m-8">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center mb-4">
                         <img src="/images/pcl_profile.png" class="w-[40px] mr-4" alt="" />
