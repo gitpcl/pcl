@@ -14,7 +14,7 @@
                 <button type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add user</button>
             </div> --}}
             <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-                <input class="rounded border-[#3c3c3c] bg-[#1e1e1e] text-white placeholder-[#515151] focus:outline-none focus:border-[#D7EF55] transition" type="text" wire:model="search" placeholder="Search recruiters...">
+                <input class="rounded border-none bg-[#1e1e1e] text-white placeholder-[#484848] focus:outline-none focus:border-[#D7EF55] transition" type="text" wire:model="search" placeholder="Search recruiters...">
             </div>
             
             </div>

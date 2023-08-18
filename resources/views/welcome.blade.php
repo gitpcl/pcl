@@ -9,7 +9,7 @@
             </div>
         </div>
         
-          <header class="bg-c border border-b-1 border-[#1E1E1E]">
+          <header class="bg-[#131313] border border-b-1 border-[#1E1E1E]">
             <nav
               class="text-white py-4 px-8 flex items-center max-w-7xl mx-auto justify-between"
             >
@@ -32,7 +32,7 @@
                           </a> --}}
 
                           {{-- @if (Route::has('register'))
-                              <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-[#D7EF55] focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                              <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-c focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                           @endif --}}
 
                           <button onclick="Livewire.emit('buttonClicked')" type="button" class="flex ml-4 font-semibold text-white hover:text-[#D7EF55] dark:text-white dark:hover:text-[#D7EF55]">
