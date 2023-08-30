@@ -20,8 +20,10 @@ class Form extends Component
         'last_name' => 'required',
         'company' => 'required',
         'company_url' => 'required|url',
-        'phone' => 'regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
-        'cell' => 'required|regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
+        // 'phone' => 'regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
+        // 'cell' => 'required|regex:/^\+\d{1,3} \(\d{3}\) \d{3}-\d{4}$/',
+        'phone' => '',
+        'cell' => 'required',
         'email' => 'required|email',
     ];
 

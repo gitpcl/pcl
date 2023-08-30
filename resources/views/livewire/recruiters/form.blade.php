@@ -44,12 +44,12 @@
                 <div class="flex mb-2">
                     <div class="flex-col mr-2">
                         <label for="phone">Phone</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="phone" placeholder="+1 (XXX) XXX-XXXX" required>
+                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="phone" placeholder="" required>
                         @error('phone') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
                     <div class="flex-col">
                         <label for="cell">Cell (required)</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="cell" placeholder="+1 (XXX) XXX-XXXX" required>
+                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="cell" placeholder="" required>
                         @error('cell') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
                 </div>
