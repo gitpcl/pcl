@@ -14,7 +14,7 @@ class Index extends Component
 
     public function render()
     {
-        $recruiters = Recruiters::where('first_name', 'like', '%' . $this->search . '%')
+        $recruiters = Recruiters::where('email', 'like', '%' . $this->search . '%')
             ->orWhere('email', 'like', '%' . $this->search . '%')
             ->paginate(10);
 

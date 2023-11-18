@@ -34,7 +34,7 @@
                           {{-- @if (Route::has('register'))
                               <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-c focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                           @endif --}}
-
+            
                           <button onclick="Livewire.emit('buttonClicked')" type="button" class="flex ml-4 font-semibold text-white hover:text-[#D7EF55] dark:text-white dark:hover:text-[#D7EF55]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
@@ -116,7 +116,7 @@
                   <span>Under development</span>
                 </button>
               </div> --}}
-
+              <a href="/projects">
               <div class="bg-[#1e1e1e] rounded p-12">
                 <h1 class="text-2xl font-bold mb-2">Latest Projects</h1>
                 <p class="text-[#a5a5a5]">
@@ -129,26 +129,28 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
                   </span>
-                  <span>Under development</span>
+                  <span>New project added</span>
                 </button>
               </div>
-
+              </a>
+              
               <div class="bg-[#1e1e1e] rounded p-12">
                 <h1 class="text-2xl font-bold mb-2">Courses</h1>
                 <p class="text-[#a5a5a5]">
                   Access lessons and frameworks that will help you code and productize
                   your skill.
                 </p>
-                <button
-                class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
-              >
-                <span class="relative flex h-3 w-3 mr-4">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
-                </span>
-                <span>Currently filming</span>
-              </button>
+                  <button
+                  class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
+                >
+                  <span class="relative flex h-3 w-3 mr-4">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
+                  </span>
+                  <span>Currently filming</span>
+                </button>
               </div>
+         
             </div>
           </main>
           <footer
