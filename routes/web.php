@@ -22,6 +22,14 @@ Route::get('/projects', function () {
     return view('projects');
 })->name('projects');
 
+Route::get('/resources', function () {
+    return view('resources');
+})->name('resources');
+
+Route::get('/articles', function () {
+    return view('articles');
+})->name('articles');
+
 Route::get('/download-resume', [MainController::class, 'downloadResume']);
 
 Route::get('/thank-you', function () {

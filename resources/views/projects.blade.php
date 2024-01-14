@@ -53,8 +53,8 @@
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-1 gap-4 text-white py-8 max-w-md mx-auto px-8">
-        <div class="bg-[#1e1e1e] rounded p-12">
+      <div class="grid grid-cols-1 md:grid-cols-1 gap-4 text-white py-4 max-w-md mx-auto px-8">
+        <div class="bg-[#1e1e1e] rounded p-10">
           <h1 class="text-2xl font-bold mb-2">Roofing & Construction Company</h1>
           <p class="text-[#a5a5a5]">
             {{-- I was responsible for developing an ERP system to to manage the company's operations that replaced an EOL Microsoft Access application. The system was developed using Laravel, Tailwind & Livewire. --}}

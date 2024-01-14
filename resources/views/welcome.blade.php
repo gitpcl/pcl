@@ -50,7 +50,7 @@
           </header>
       
           <main id="main" class="bg-[#131313]">
-            <div class="h-[500px] flex justify-center items-center">
+            <div class="h-[400px] flex justify-center items-center">
               <div class="text-white">
 
                 <h1 class="text-center text-3xl md:text-5xl font-bold">
@@ -99,24 +99,24 @@
                   <span>Getting first 1,000 subs</span>
                 </button>
               </div>
-
-              {{-- <div class="bg-[#1e1e1e] rounded p-12">
-                <h1 class="text-2xl font-bold mb-2">Resources</h1>
+              {{-- <a href="/articles">
+              <div class="bg-[#1e1e1e] rounded p-12">
+                <h1 class="text-2xl font-bold mb-2">Articles</h1>
                 <p class="text-[#a5a5a5]">
-                  Access free resources and discover different opportunities, ideas,
-                  and tools.
+                  Here are some of my latest articles. I hope you enjoy them.
                 </p>
                 <button
-                  class="bg-[#272727] hover:bg-[#e7e7e7] px-4 py-2 rounded mt-8 hover:text-[#131313] flex items-center"
+                  class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
                 >
                   <span class="relative flex h-3 w-3 mr-4">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
                   </span>
-                  <span>Under development</span>
+                  <span>New article posted</span>
                 </button>
-              </div> --}}
-              <a href="/projects">
+              </div>
+             </a> --}}
+              {{-- <a href="/projects">
               <div class="bg-[#1e1e1e] rounded p-12">
                 <h1 class="text-2xl font-bold mb-2">Latest Projects</h1>
                 <p class="text-[#a5a5a5]">
@@ -132,7 +132,24 @@
                   <span>New project added</span>
                 </button>
               </div>
-              </a>
+              </a> --}}
+              <a href="/resources">
+                <div class="bg-[#1e1e1e] rounded p-12">
+                  <h1 class="text-2xl font-bold mb-2">Resources</h1>
+                  <p class="text-[#a5a5a5]">
+                    Take a moment to check out some of the resources I've prepared.
+                  </p>
+                  <button
+                    class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
+                  >
+                    <span class="relative flex h-3 w-3 mr-4">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
+                    </span>
+                    <span>1 New Resource Added</span>
+                  </button>
+                </div>
+                </a>
               
               <div class="bg-[#1e1e1e] rounded p-12">
                 <h1 class="text-2xl font-bold mb-2">Courses</h1>
@@ -143,10 +160,10 @@
                   <button
                   class="bg-[#272727] px-4 py-2 rounded mt-8 flex items-center"
                 >
-                  <span class="relative flex h-3 w-3 mr-4">
+                  {{-- <span class="relative flex h-3 w-3 mr-4">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7EF55] opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D7EF55]"></span>
-                  </span>
+                  </span> --}}
                   <span>Currently filming</span>
                 </button>
               </div>
