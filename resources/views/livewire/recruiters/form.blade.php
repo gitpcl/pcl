@@ -17,46 +17,46 @@
                 </div>
                 <p class="text-[#a5a5a5] mb-4">Thank you for your interest. Please fill out the form below in order to download my resume. <b class="text-white">Yes, this is my most recent resume</b>. I really appreciate the opportunity.</p>
                 <div class="flex mb-2">
-                    <div class="flex-col mr-2">
-                        <label for="first_name">First Name (required)</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded placeholder-[#3e3e3e]" type="text" wire:model="first_name" placeholder="John" required>
+                    <div class="flex-col relative mr-2 w-1/2">
+                        <label for="first_name" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">First Name (required)</label>
+                        <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="text" wire:model="first_name" placeholder="John" required>
                         @error('first_name') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
-                    <div class="flex-col">
-                        <label for="last_name">Last Name (required)</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded placeholder-[#3e3e3e]" type="text" wire:model="last_name" placeholder="Doe" required>
+                    <div class="flex-col relative w-1/2">
+                        <label for="last_name" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Last Name (required)</label>
+                        <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="text" wire:model="last_name" placeholder="Doe" required>
                         @error('last_name') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
                 </div>
 
-                <div class="flex flex-col mb-2">
-                    <label for="company">Company Name (required)</label>
-                    <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="text" wire:model="company" placeholder="ACME" required>
+                <div class="flex flex-col my-2 relative">
+                    <label for="company" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Company Name (required)</label>
+                    <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="text" wire:model="company" placeholder="ACME" required>
                     @error('company') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="flex flex-col mb-2">
-                    <label for="company_url">Website (required)</label>
-                    <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="url" wire:model="company_url" placeholder="https://www.acme.com" required>
+                <div class="flex flex-col my-2 relative">
+                    <label for="company_url" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Website (required)</label>
+                    <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="url" wire:model="company_url" placeholder="https://www.acme.com" required>
                     @error('company_url') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="flex mb-2">
-                    <div class="flex-col mr-2">
-                        <label for="phone">Phone</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="phone" placeholder="" required>
+                <div class="flex my-2">
+                    <div class="flex-col relative mr-2 w-1/2">
+                        <label for="phone" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Phone</label>
+                        <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="tel" wire:model="phone" placeholder="" required>
                         @error('phone') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
-                    <div class="flex-col">
-                        <label for="cell">Cell (required)</label>
-                        <input class="w-full bg-[#1e1e1e] border-[#3e3e3e] text-white rounded mb-2 placeholder-[#3e3e3e]" type="tel" wire:model="cell" placeholder="" required>
+                    <div class="flex-col relative w-1/2">
+                        <label for="cell" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Cell (required)</label>
+                        <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="tel" wire:model="cell" placeholder="" required>
                         @error('cell') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                     </div>
                 </div>
 
-                <div class="flex flex-col mb-2">
-                    <label for="email">Email (required)</label>
-                    <input class="bg-[#1e1e1e] border-[#3e3e3e] text-white rounded placeholder-[#3e3e3e]" type="email" wire:model="email" placeholder="john.doe@acme.com" required>
+                <div class="flex flex-col my-2 relative">
+                    <label for="email" class="absolute -top-[16px] left-4 bg-[#1E1E1E] p-2 text-xs font-bold">Email (required)</label>
+                    <input class="bg-[#1e1e1e] text-[#a5a5a5] border border-neutral-500 p-4 w-full focus:border-[#D7F055] focus:ring-[#D7F055] placeholder:text-[#707070]" type="email" wire:model="email" placeholder="john.doe@acme.com" required>
                     @error('email') <span class="error mb-2 text-[#3e3e3e]">{{ $message }}</span> @enderror
                 </div>
                 
